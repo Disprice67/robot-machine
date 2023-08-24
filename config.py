@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #Main_info
-ROOT_DIR = getcwd() + '\SupportFile'
+ROOT_DIR = getcwd() + '/SupportFile'
 DATABASE = getenv('DATABASE')
 DATABASE_TEST = getenv('DATABASE_TEST')
 #Ebay

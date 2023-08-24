@@ -4,7 +4,6 @@ from os import chdir, getcwd
 
 from openpyxl import load_workbook
 from openpyxl.styles import Border, PatternFill, Side
-from xlwings import Book
 
 from ebay import Parse
 from config import ROOT_DIR
@@ -248,8 +247,8 @@ class Writer(File):
                              fill_type='solid')
 
     # root_dir
-    OUTPUT_FILE: str =  ROOT_DIR + '\Исходящий\end.xlsx'
-    SAMPLE: str = ROOT_DIR + '\Шаблон'
+    OUTPUT_FILE: str =  ROOT_DIR + '/Исходящий/end.xlsx'
+    SAMPLE: str = ROOT_DIR + '/Шаблон'
 
     def __init__(self):
         self.file = self.find_file(self.SAMPLE)

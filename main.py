@@ -412,7 +412,7 @@ def create_db(table: list, param: list,
     try:
         for name in table:
                 ind = table.index(name)
-                local_dir = ROOT_DIR + "\\" + name
+                local_dir = ROOT_DIR + "/" + name
                 print(local_dir)
 
                 # main_object
